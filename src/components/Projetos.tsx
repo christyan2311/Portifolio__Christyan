@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowRight, BookOpen, Package2, StickyNote, ShoppingBag, Share, BookCopy, Target } from 'lucide-react';
+import { ArrowRight, BookOpen, Package2, StickyNote, ShoppingBag, Share, BookCopy, Target, Play, LogIn ,LayoutGrid  } from 'lucide-react';
 
 // Tipo para projeto
 interface Projeto {
@@ -63,7 +63,31 @@ const Projetos: React.FC = () => {
       descricao: "O projeto Fokus é uma aplicação web interativa desenvolvida para otimizar a produtividade. Ele combina um temporizador (Técnica Pomodoro) com um sistema de gerenciamento de tarefas, permitindo ao usuário alternar entre sessões de foco e descanso. As funcionalidades incluem adicionar, editar, remover e marcar tarefas como concluídas.",
       tecnologias: ["HTML", "CSS", "JavaScript", "localStorage", "setInterval"],
       icone: <Target size={40} className="text-primary" />
-    }
+    },
+
+    {
+      id: 8,
+      titulo: "VidFlow - Plataforma de Compartilhamento de Vídeos",
+      descricao: "Uma plataforma de compartilhamento de vídeos com funcionalidade de busca e exibição de informações de vídeos a partir de uma API. O projeto foca na melhoria da qualidade do código e do fluxo de desenvolvimento através da implementação de ferramentas modernas.",
+      tecnologias: ['Node.js',"NPM","JSON Server","Prettier", "Vite", "Axios", "Eslint", "Vercel"],
+      icone: <Play  size={40} className="text-primary" />
+    },
+
+    {
+      id: 9,
+      titulo: " CodeConnect - Página de Login com React",
+      descricao: "Este projeto é uma página de login para uma rede social de desenvolvedores. Ele foi desenvolvido como parte de um curso de React para demonstrar a criação de interfaces de usuário com a biblioteca. A página inclui um formulário de e-mail e senha, um botão de login e links de recuperação de conta.",
+      tecnologias: ['React',"React-DOM","Babel","JSX", "Props", "useState", "Manipulação de Eventos"],
+      icone: <LogIn   size={40} className="text-primary" />
+    },
+
+    {
+      id: 10,
+      titulo: "CodeConnect - Tela de Feed com React",
+      descricao: "Este projeto é a tela de feed para uma rede social de desenvolvedores. A interface foi desenvolvida para exibir posts em cards, com um menu de navegação, barra de pesquisa e seções de filtro e ordenação. No momento, todos os elementos são estáticos.",
+      tecnologias: ['Figma', "JavaScript", "React", "CSS", "Componentização", "Ganchos (useState e useEffect)", "Buscar API", "Adereços"],
+      icone: <LayoutGrid   size={40} className="text-primary" />
+    },
 
   ];
 
