@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Code, Database, Laptop, FileCode } from 'lucide-react';
-
+import { Code, FileCode, LayoutDashboard, ListTodo, Cloud, HardDrive, Terminal, Palette, Globe, Database } from 'lucide-react';
 // Componente da seção de habilidades técnicas
 const Habilidades: React.FC = () => {
   // Estado para controlar a animação das barras de progresso
@@ -13,16 +12,22 @@ const Habilidades: React.FC = () => {
 
   // Lista de habilidades com seus níveis
   const skills = [
-    { name: 'HTML', level: 40, icon: <FileCode size={20} className="mr-2" /> },
-    { name: 'CSS', level: 40, icon: <FileCode size={20} className="mr-2" /> },
-    { name: 'JavaScript', level: 30, icon: <Code size={20} className="mr-2" /> },
-    { name: 'MySQL', level: 35, icon: <Database size={20} className="mr-2" /> },
-    { name: 'Microsoft Office', level: 80, icon: <Laptop size={20} className="mr-2" /> },
-    { name: 'Git', level: 30, icon: <Code size={20} className="mr-2" /> },
+    { name: 'HTML', level: 85, icon: <FileCode size={20} className="mr-2" /> },
+    { name: 'CSS', level: 90, icon: <FileCode size={20} className="mr-2" /> },
+    { name: 'JavaScript', level: 80, icon: <Code size={20} className="mr-2" /> },
+    { name: 'React', level: 65, icon: <LayoutDashboard size={20} className="mr-2" /> },
+    { name: 'Manipulação de Arrays', level: 60, icon: <ListTodo size={20} className="mr-2" /> },
+    { name: 'Requisições a API', level: 50, icon: <Cloud size={20} className="mr-2" /> },
+    { name: 'Persistência de Dados (localStorage)', level: 40, icon: <HardDrive size={20} className="mr-2" /> },
+    { name: 'Node.js', level: 30, icon: <Terminal size={20} className="mr-2" /> },
+    { name: 'Figma', level: 25, icon: <Palette size={20} className="mr-2" /> },
+    { name: 'Vite', level: 20, icon: <Terminal size={20} className="mr-2" /> },
+    { name: 'Vercel', level: 20, icon: <Globe size={20} className="mr-2" /> },
+    { name: 'MySQL', level: 20, icon: <Database size={20} className="mr-2" /> },
   ];
 
   // Ferramentas utilizadas
-  const tools = ['VS Code', 'Visual Studio', 'Git', 'GitHub'];
+  const tools = ['VS Code', 'Visual Studio', 'Git', 'GitHub', 'Figma', 'Notion', 'Trello', 'NPM'];
 
   return (
     <div className="container mx-auto px-4">
@@ -92,10 +97,10 @@ const Habilidades: React.FC = () => {
               <div>
                 <div className="flex items-center justify-between mb-2">
                   <span className="font-medium">Inglês</span>
-                  <span className="text-sm text-gray-500">Básico/Aprendiz</span>
+                  <span className="text-sm text-gray-500">Intermediário/Aprendiz</span>
                 </div>
                 <div className="h-2 w-full bg-gray-200 rounded-full overflow-hidden">
-                  <div className="h-full bg-primary rounded-full" style={{ width: '30%' }} />
+                  <div className="h-full bg-primary rounded-full" style={{ width: '40%' }} />
                 </div>
               </div>
             </div>
