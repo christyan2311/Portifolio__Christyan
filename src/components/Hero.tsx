@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
         </h1>
         
         <h2 className="text-xl md:text-2xl font-light mb-8 animate-fadeIn" style={{ animationDelay: '0.2s' }}>
-          Desenvolvedor de Sistemas em Formação
+          Análista e Desenvolvedor de Sistemas em Formação
         </h2>
         
         <p className="max-w-2xl text-gray-200 mb-10 animate-fadeIn" style={{ animationDelay: '0.4s' }}>
