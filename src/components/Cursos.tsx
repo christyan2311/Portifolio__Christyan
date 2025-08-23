@@ -76,6 +76,13 @@ const Cursos: React.FC = () => {
             'Node.js e terminal: dominando o ambiente de desenvolvimento front-end',
             'React: configurando e estruturando projetos com Vite'
           ]
+        },
+        {
+          nome: 'Next.js 14: desenvolvendo aplicações robustas com alta produtividade',
+          expanded: false,
+          cursos: [
+            'Next.js: conheça o framework React'
+          ]
         }
       ]
     },
